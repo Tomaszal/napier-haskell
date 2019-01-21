@@ -1,0 +1,45 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile open Haskell program",
+            "type": "shell",
+            "command": "ghc -dynamic -o ${fileBasenameNoExtension}.bin ${fileBasenameNoExtension}",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Compile & run open Haskell program",
+            "type": "shell",
+            "command": "./${fileBasenameNoExtension}.bin",
+            "windows": {
+                "command": "${fileBasenameNoExtension}.bin"
+            },
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "dependsOn": [
+                "Compile open Haskell program"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Clean up Haskell files in current folder",
+            "type": "shell",
+            "linux": {
+                "command": "rm -f *.hi *.o *.bin"
+            },
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
