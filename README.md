@@ -2,7 +2,7 @@
 
 **DISCLAIMER:** No one should blindly copy code from this repository (or anywhere really). Use this if you are stuck or just curious about my solution.
 
-This repository contains my solutions to Haskell exercises given on [Mathematics for Software Engineering SET07106 module in Edinburgh Napier University](https://moodle.napier.ac.uk/course/view.php?id=28446).
+This repository contains my solutions to Haskell exercises given on [Mathematics for Software Engineering SET07106 module in Edinburgh Napier University](https://www.modules.napier.ac.uk/Module.aspx?ID=SET07106).
 
 I try to keep everything clean, easily readable and understandable. However, this is still a learning process so there will be imperfections.
 
