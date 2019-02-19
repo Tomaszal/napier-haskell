@@ -11,8 +11,8 @@ module Functions where
 
     isPrime :: Int -> Bool
     isPrime n
-            | n <=0 = error "Makes no sense"
-            | otherwise = not (isComposite n)
+      | n <=0 = error "Makes no sense"
+      | otherwise = not (isComposite n)
 
     fakeFilter :: (a -> Bool) -> [a] -> [a]
     fakeFilter f xs  = [x | x <- xs, f x]
